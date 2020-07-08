@@ -1,0 +1,46 @@
+<div style="box-sizing: border-box; padding: 0; font-size: 100%; vertical-align: baseline; margin: auto; border: 1px solid #dadada; max-width: 600px; font-family: Verdana;" class="email">
+    <div class="header-email" style="box-sizing: border-box; border: 0; font-size: 100%; vertical-align: baseline; margin: 0 25px; padding: 30px 0; border-bottom: 1px solid #EAECF3;">
+        <img src="http://coincoupon.io/wp-content/plugins/coin-coupon/image/email/logo.png" alt="logo" style="box-sizing: border-box; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; margin: auto; width: 140px; display: block;">
+    </div>
+    <div class="content-email" style="box-sizing: border-box; margin: 0; border: 0; font-size: 100%; vertical-align: baseline; padding: 25px;">
+        <div class="title1" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 600; color: #23252D; margin-bottom: 30px;">Hello, Dear Friend! </div>
+        <div class="title5" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 16px;color: #444753; margin-bottom: 20px;"> Your order:
+            <span style="font-weight: bold;font-size: 18px;color: #23252D;">{{preetyPrice}}</span>
+        </div>
+        <div class="title2" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 14px; color: #54596D; margin-bottom: 25px;">
+            In order to make a purchase you need to enter the following details in the payment system of your bank.
+        </div>
+        {{#if isSEPA}}
+        <div class="block-info" style="box-sizing: border-box; margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; border: 1px solid #EAECF3; margin-bottom: 25px;">
+            <div class="header" style="box-sizing: border-box; margin: 0; border: 0; vertical-align: baseline; padding: 15px; font-size: 16px; border-bottom: 1px solid #EAECF3; font-weight: 600; color: #444753;">SEPA Bank Transfer</div>
+            <div class="content" style="box-sizing: border-box; margin: 0; border: 0; font-size: 100%; vertical-align: baseline; padding: 15px;">
+                <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; color: #54596D; margin-bottom: 12px;">Recipient: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #23252D;">Viewerade Limited</span></div>
+                <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; color: #54596D; margin-bottom: 12px;">IBAN: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #23252D;">GB13 TRWI 2314 7057 7253 46</span></div>
+                <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; color: #54596D; margin-bottom: 12px;">BIC / SWIFT: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #23252D;">23-14-70</span></div>
+            </div>
+            <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; font-weight: bold;font-size: 18px;color: #23252D; margin-bottom: 0;padding: 15px;border-top: 1px solid #eaecf3;">Reference: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #6FB12F;">{{reference}}</span></div>
+        </div>
+        {{else}}
+        <div class="block-info" style="box-sizing: border-box; margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; border: 1px solid #EAECF3; margin-bottom: 25px;">
+            <div class="header" style="box-sizing: border-box; margin: 0; border: 0; vertical-align: baseline; padding: 15px; font-size: 16px; border-bottom: 1px solid #EAECF3; font-weight: 600; color: #444753;">Direct Bank Transfer</div>
+            <div class="content" style="box-sizing: border-box; margin: 0; border: 0; font-size: 100%; vertical-align: baseline; padding: 15px;">
+                <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; color: #54596D; margin-bottom: 12px;">Recipient: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #23252D;">Viewerade Limited</span></div>
+                <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; color: #54596D; margin-bottom: 12px;">Account number: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #23252D;">57725346</span></div>
+                <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; color: #54596D; margin-bottom: 12px;">Sort code: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #23252D;">23-14-70</span></div>
+            </div>
+            <div class="item" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; font-weight: bold;font-size: 18px;color: #23252D; margin-bottom: 0;padding: 15px;border-top: 1px solid #eaecf3;">Reference: <span class="opt" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 18px; font-weight: 700; color: #6FB12F;">{{reference}}</span></div>
+        </div>
+        {{/if}}
+        <div class="attantion" style="box-sizing: border-box; margin: 0; border: 0; vertical-align: baseline; line-height: 21px; color: #54596D; font-size: 14px; padding: 15px; background: #EAECF3; margin-bottom: 20px;">
+            <span style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; font-weight: 600;">ATTENTION!</span> Please indicate this number as a Payment Reference for the bank transfer.
+        </div>
+        <div class="title2" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 14px; color: #54596D; margin-bottom: 25px;">
+            Thank you for using our service.
+        </div>
+    </div>
+    <div class="footer-email" style="box-sizing: border-box; border: 0; font-size: 100%; vertical-align: baseline; margin: 0 25px; padding: 25px 0; border-top: 1px solid #EAECF3;">
+        <div class="title3" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; font-weight: 600; color: #494C57; margin-bottom: 10px;">Need help?</div>
+        <div class="title2" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 14px; color: #54596D; margin-bottom: 60px;">If you have any difficulties, please contact us: <a target="_blank" href="mailto:info@coincoupon.io" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; text-decoration: none; color: #6FB12F;">info@coincoupon.io</a></div>
+        <div class="title5" style="box-sizing: border-box; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 16px; color: #A2A6B0;">&#169; 2020 coincoupon.io</div>
+    </div>
+</div>
